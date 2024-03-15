@@ -1,0 +1,15 @@
+.modal-display {
+  &__layout {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--transparent-grey, rgba(188, 195, 208, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+
+:root {
+  --transparent-grey: rgba(188, 195, 208, 0.5);
+  --light-blue: #81a0ee;
+  --deep-blue: rgb(67, 46, 171);
+  --main-black: #000;
+  --main-white: #fff;
+  --font-color-main: rgb(38, 44, 64);
+  --font-color-secondary: rgb(129, 137, 163);
+  --blueberry: rgb(212, 222, 254);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova";
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
