@@ -1,0 +1,28 @@
+.root {
+  &__container {
+    padding: 65px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.search {
+  &__input {
+    width: 100%;
+    border: 1px solid var(--blueberry, rgb(212, 222, 254));
+    border-radius: 24px;
+    font-size: 24px;
+    padding: 10px 48px 10px 18px;
+    caret-color: var(--deep-blue);
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      border-color: var(--light-blue);
+    }
+  }
+  &__icon {
+    position: absolute;
+    right: 26px;
+  }
+}
