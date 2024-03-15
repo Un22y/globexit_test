@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <%
+        try {
+            _query_str = "for $elem in collaborators return $elem/fullname";
+            names = XQuery(_query_str);
+            for (name in names) { 
+    %>
+                <li><%= name %></li>
+    <%
+            }
+        }
+        catch(error) {
+    %>
+        <li>Error occurred</li>
+    <%
+        }
+    %>
+    </ul>
+</body>
+</html>
